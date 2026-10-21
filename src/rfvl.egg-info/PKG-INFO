@@ -1,0 +1,23 @@
+Metadata-Version: 2.4
+Name: rfvl
+Version: 0.1.0
+Summary: Independent Qwen2.5-VL reproduction of referentially faithful video-language generation
+Requires-Python: >=3.10
+Requires-Dist: torch<2.9,>=2.5
+Requires-Dist: transformers==4.57.1
+Requires-Dist: peft==0.17.1
+Requires-Dist: numpy<3,>=1.26
+Requires-Dist: Pillow>=10
+Requires-Dist: PyYAML>=6
+Requires-Dist: scipy>=1.11
+Requires-Dist: safetensors>=0.4
+Requires-Dist: accelerate>=1.0
+Requires-Dist: imageio[ffmpeg]>=2.34
+Provides-Extra: test
+Requires-Dist: pytest>=8; extra == "test"
+Provides-Extra: data
+Requires-Dist: pycocotools>=2.0.8; extra == "data"
+Requires-Dist: datasets>=3; extra == "data"
+Requires-Dist: huggingface-hub>=0.34; extra == "data"
+Provides-Extra: caption
+Requires-Dist: pycocoevalcap==1.2; extra == "caption"

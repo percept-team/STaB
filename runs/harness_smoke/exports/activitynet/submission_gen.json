@@ -1,0 +1,1 @@
+{"results": {"activitynet_entities_smoke": {"0": {"clss": [], "idx_in_sent": [], "bbox_for_all_frames": []}}}, "eval_mode": "gen", "external_data": {"used": true, "details": "Qwen2.5-VL, SAM2.1, HowToGround1M"}}

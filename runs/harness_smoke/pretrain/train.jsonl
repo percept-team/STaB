@@ -1,0 +1,4 @@
+{"step": 1, "stage": "pretrain", "loss": 9.177303314208984, "grad_norm": 3.343863010406494, "seconds": 0.0459999999984575}
+{"step": 1, "stage": "pretrain", "loss": 9.177303314208984, "grad_norm": 3.343863010406494, "seconds": 0.0470000000022992}
+{"step": 1, "stage": "pretrain", "loss": 9.177303314208984, "grad_norm": 3.343863010406494, "seconds": 0.0319999999992433}
+{"step": 1, "stage": "pretrain", "loss": 9.177303314208984, "grad_norm": 3.343863010406494, "seconds": 0.0470000000022992}

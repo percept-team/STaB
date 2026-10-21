@@ -1,0 +1,26 @@
+[build-system]
+requires = ["setuptools>=68", "wheel"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "rfvl"
+version = "0.1.0"
+description = "Independent Qwen2.5-VL reproduction of referentially faithful video-language generation"
+requires-python = ">=3.10"
+dependencies = ["torch>=2.5,<2.9", "transformers==4.57.1", "peft==0.17.1", "numpy>=1.26,<3", "Pillow>=10", "PyYAML>=6", "scipy>=1.11", "safetensors>=0.4", "accelerate>=1.0", "imageio[ffmpeg]>=2.34"]
+
+[project.optional-dependencies]
+test = ["pytest>=8"]
+data = ["pycocotools>=2.0.8", "datasets>=3", "huggingface-hub>=0.34", "opencv-python-headless>=4.10"]
+caption = ["pycocoevalcap==1.2"]
+benchmark = ["pycocoevalcap==1.2", "scikit-image>=0.24", "scikit-learn>=1.5", "stanfordcorenlp>=3.9.1.1"]
+
+[project.scripts]
+rfvl = "rfvl.cli:main"
+
+[tool.setuptools.packages.find]
+where = ["src"]
+
+[tool.pytest.ini_options]
+testpaths = ["tests"]
+pythonpath = ["src"]

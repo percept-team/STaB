@@ -1,0 +1,5 @@
+extends: q3b_4090.yaml
+semantic_frames: 16
+spatial_frames: 16
+semantic_size: 448
+accumulation: 32
